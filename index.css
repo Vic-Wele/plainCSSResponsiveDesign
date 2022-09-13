@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Source sans pro";
+  font-size: 1rem;
+  color: #404040;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+h1 span {
+  font-weight: 900;
+  color: #fd7a00;
+}
+
+h1 + p {
+  color: #ece8e5;
+  font-weight: 600;
+  font-size: 1.3125rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.3125rem;
+}
+
+h2 + p {
+  margin-top: 0;
+  text-transform: uppercase;
+  color: #ff7b00;
+  font-weight: 900;
+}
+.top-text {
+  font-size: 0.625rem;
+  font-weight: 600;
+  color: #ff7b00;
+  text-transform: uppercase;
+  order: -1;
+}
+
+.fine-print {
+  font-size: 0.625rem;
+  letter-spacing: 1px;
+}
+
+.intro {
+  background-image: url(images/andrew-neel-cckf4TsHAuw-unsplash.jpg);
+  padding: 0.25em 1em;
+  background-position: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.5em 2em;
+  min-height: 50vh;
+}
+
+.main-content {
+  padding: 2em 1em;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.container-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 50vh;
+}
+
+.intro > *,
+.main-content > * {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+input {
+  padding: 0.45em;
+  border: 1.5px solid rgb(216, 216, 216);
+  border-radius: 4px;
+  outline: none;
+}
+
+input:focus {
+  transform: scale(1.06);
+}
+button {
+  border: none;
+  color: black;
+  cursor: pointer;
+  padding: 0.8em 10em;
+  border-radius: 4px;
+  font-weight: 600;
+  background: linear-gradient(
+    to right,
+    rgb(243, 199, 137) 0%,
+    #ff7b00 50%,
+    rgb(249, 194, 116) 100%
+  );
+  transform: scale(1.06);
+  transition: 0.15s all ease;
+}
+
+button:hover {
+  color: #fd7a00;
+  border: 1px solid #fd7a00;
+  background: white;
+}
+
+@media (min-width: 650px) {
+  body {
+    font-size: 1.125rem;
+    display: flex;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2,
+  h1 + p {
+    font-size: 1.75rem;
+  }
+
+  .intro,
+  .main-content {
+    width: 50%;
+    min-height: 100vh;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .container-intro {
+    height: 100%;
+  }
+}
